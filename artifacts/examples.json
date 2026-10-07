@@ -52,18 +52,6 @@
     "selection": "Synthetic control"
   },
   {
-    "id": "upgrade-beet",
-    "path": "data/raw/valid/images/-5_jpg.rf.e95aef435416622820d8a5b82bb22c05.jpg",
-    "classes": [
-      "beet",
-      "radish",
-      "garlic"
-    ],
-    "label": "ภาพหลายชนิด: บีทรูต หัวไชเท้า และกระเทียม (ตัวอย่างข้อจำกัดของโมเดล)",
-    "display_label": "บีทรูต + หัวไชเท้า + กระเทียม · ยังตรวจผิด",
-    "known_limitation": "ผลโมเดลในภาพนี้มีหลายกรอบผิดเป็น potato, onion, pear และ apple; ไม่ใช่ภาพสาธิตการตรวจบีทรูตสำเร็จ"
-  },
-  {
     "id": "upgrade-cabbage",
     "path": "data/raw/valid/images/-23_jpg.rf.ef9212d1b0c23a393096e5184a459663.jpg",
     "classes": [
