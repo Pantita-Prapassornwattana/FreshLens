@@ -1,0 +1,8 @@
+{
+  "repository": "Piyu12/fruit-veg-yolo11m-detector",
+  "revision": "82c9865261175e778ba5641cf8560b5d10439ec6",
+  "url": "https://huggingface.co/Piyu12/fruit-veg-yolo11m-detector/resolve/82c9865261175e778ba5641cf8560b5d10439ec6/best.pt",
+  "bytes": 40565868,
+  "sha256": "499ccee2169731363de26146d9989942c27f3849f64509e0b5190cbd1c679c19",
+  "trained_locally": false
+}

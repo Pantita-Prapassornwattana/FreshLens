@@ -1,0 +1,124 @@
+{
+  "created_at": "2026-10-07T11:23:08.327081+00:00",
+  "routing": {
+    "almond": "lvis63",
+    "apple": "lvis63",
+    "asparagus": "lvis63",
+    "avocado": "lvis63",
+    "banana": "lvis-v3",
+    "beans": "lvis63",
+    "beet": "produce35",
+    "bell pepper": "lvis63",
+    "blackberry": "lvis63",
+    "blueberry": "lvis63-tiles",
+    "broccoli": "lvis63",
+    "brussels sprouts": "lvis63",
+    "cabbage": "produce35",
+    "carrot": "lvis63",
+    "cauliflower": "lvis63",
+    "celery": "lvis63",
+    "cherry": "lvis63",
+    "corn": "lvis63",
+    "cucumber": "produce35",
+    "egg": "lvis63",
+    "eggplant": "produce35",
+    "garlic": "lvis-v3",
+    "grape": "lvis63",
+    "green bean": "lvis-v3",
+    "green onion": "lvis63",
+    "hot pepper": "produce35",
+    "kiwi": "lvis63",
+    "lemon": "lvis63",
+    "lettuce": "lvis63",
+    "lime": "lvis63",
+    "mandarin": "lvis63",
+    "mushroom": "lvis-v3",
+    "onion": "lvis-v3",
+    "orange": "lvis63",
+    "pattypan squash": "lvis63",
+    "pea": "produce35",
+    "peach": "lvis-v3",
+    "pear": "lvis63",
+    "pineapple": "lvis63",
+    "potato": "lvis63",
+    "pumpkin": "lvis63",
+    "radish": "lvis63",
+    "raspberry": "lvis63",
+    "strawberry": "lvis63",
+    "tomato": "lvis63",
+    "vegetable marrow": "lvis63",
+    "watermelon": "lvis-v3"
+  },
+  "baseline": {
+    "tp": 1360,
+    "fp": 1586,
+    "fn": 2687,
+    "precision": 0.461642905634759,
+    "recall": 0.3360513960958735,
+    "f1": 0.388960388960389
+  },
+  "specialist": {
+    "tp": 141,
+    "fp": 323,
+    "fn": 3906,
+    "precision": 0.30387931034482757,
+    "recall": 0.034840622683469234,
+    "f1": 0.06251385502105963
+  },
+  "ensemble": {
+    "tp": 1459,
+    "fp": 1507,
+    "fn": 2588,
+    "precision": 0.4919082939986514,
+    "recall": 0.3605139609587349,
+    "f1": 0.4160844146584914
+  },
+  "candidates": [
+    {
+      "run_id": "expansion-baseline",
+      "aggregate": {
+        "tp": 1360,
+        "fp": 1586,
+        "fn": 2687,
+        "precision": 0.461642905634759,
+        "recall": 0.3360513960958735,
+        "f1": 0.388960388960389
+      }
+    },
+    {
+      "run_id": "expansion-specialist",
+      "aggregate": {
+        "tp": 141,
+        "fp": 323,
+        "fn": 3906,
+        "precision": 0.30387931034482757,
+        "recall": 0.034840622683469234,
+        "f1": 0.06251385502105963
+      }
+    },
+    {
+      "run_id": "expansion-lvis-v3",
+      "aggregate": {
+        "tp": 1288,
+        "fp": 1737,
+        "fn": 2759,
+        "precision": 0.4257851239669421,
+        "recall": 0.31826043983197433,
+        "f1": 0.36425339366515835
+      }
+    },
+    {
+      "run_id": "expansion-baseline-tiles",
+      "aggregate": {
+        "tp": 1485,
+        "fp": 3634,
+        "fn": 2562,
+        "precision": 0.2900957218206681,
+        "recall": 0.3669384729429207,
+        "f1": 0.32402356535020727
+      }
+    }
+  ],
+  "test_used_for_selection": false,
+  "weights_trained": false
+}

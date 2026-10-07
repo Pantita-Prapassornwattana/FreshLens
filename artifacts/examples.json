@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "label": "Dataset validation example: apple",
+    "classes": [
+      "apple"
+    ],
+    "path": "data/raw/valid/images/000000091849_jpg.rf.040146447a5e88fb25cd11babce1265d.jpg",
+    "selection": "Illustrative correct detections selected after evaluation; not representative accuracy"
+  },
+  {
+    "id": "2",
+    "label": "Dataset test example: banana",
+    "classes": [
+      "banana"
+    ],
+    "path": "data/raw/test/images/000000090662_jpg.rf.218867047ccdc934b893e0d80acac08d.jpg",
+    "selection": "Illustrative correct detections selected after evaluation; not representative accuracy"
+  },
+  {
+    "id": "3",
+    "label": "Dataset test example: broccoli",
+    "classes": [
+      "broccoli"
+    ],
+    "path": "data/raw/test/images/-1-22_jpg.rf.9059a7b5d273101fd683cbbd3c708f49.jpg",
+    "selection": "Illustrative correct detections selected after evaluation; not representative accuracy"
+  },
+  {
+    "id": "4",
+    "label": "Dataset test example: cauliflower",
+    "classes": [
+      "cauliflower"
+    ],
+    "path": "data/raw/test/images/-44_jpg.rf.4c5dbd07276f4bbbda10f8b21da6a970.jpg",
+    "selection": "Illustrative correct detections selected after evaluation; not representative accuracy"
+  },
+  {
+    "id": "5",
+    "label": "Dataset test example: brussels sprouts",
+    "classes": [
+      "brussels sprouts"
+    ],
+    "path": "data/raw/test/images/-39_jpg.rf.7672d5e2ab7109a11082ede876cb91c5.jpg",
+    "selection": "Illustrative correct detections selected after evaluation; not representative accuracy"
+  },
+  {
+    "id": "negative",
+    "label": "ภาพว่าง (ไม่มีผักผลไม้)",
+    "classes": [],
+    "path": "tests/fixtures/negative_controls/white.png",
+    "selection": "Synthetic control"
+  },
+  {
+    "id": "upgrade-beet",
+    "path": "data/raw/valid/images/-5_jpg.rf.e95aef435416622820d8a5b82bb22c05.jpg",
+    "classes": [
+      "beet",
+      "radish",
+      "garlic"
+    ],
+    "label": "ภาพหลายชนิด: บีทรูต หัวไชเท้า และกระเทียม (ตัวอย่างข้อจำกัดของโมเดล)",
+    "display_label": "บีทรูต + หัวไชเท้า + กระเทียม · ยังตรวจผิด",
+    "known_limitation": "ผลโมเดลในภาพนี้มีหลายกรอบผิดเป็น potato, onion, pear และ apple; ไม่ใช่ภาพสาธิตการตรวจบีทรูตสำเร็จ"
+  },
+  {
+    "id": "upgrade-cabbage",
+    "path": "data/raw/valid/images/-23_jpg.rf.ef9212d1b0c23a393096e5184a459663.jpg",
+    "classes": [
+      "cabbage"
+    ],
+    "label": "Dataset validation example: cabbage"
+  },
+  {
+    "id": "upgrade-hot-pepper",
+    "path": "data/raw/valid/images/000000220216_jpg.rf.31a09f5a54f7fe7f7ff220f854e7eb73.jpg",
+    "classes": [
+      "hot pepper"
+    ],
+    "label": "Illustrative validation example: hot pepper"
+  }
+]

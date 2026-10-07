@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-07T11:40:07.218956+00:00",
+  "target": "http://127.0.0.1:8000",
+  "fixtures": "synthetic only; no final-test images rerun",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "cross origin blocked before inference",
+      "http_status": 403,
+      "expected_status": 403,
+      "passed": true
+    },
+    {
+      "name": "malformed image rejected",
+      "http_status": 400,
+      "expected_status": 400,
+      "passed": true
+    },
+    {
+      "name": "negative PNG inference schema and no evaluation history writes",
+      "http_status": 200,
+      "expected_status": 200,
+      "passed": true,
+      "detections": 0,
+      "history_unchanged": true,
+      "schema_valid": true,
+      "annotated_image_decodes": true
+    },
+    {
+      "name": "oversized request rejected without receiving body",
+      "http_status": 413,
+      "expected_status": 413,
+      "passed": true
+    }
+  ]
+}

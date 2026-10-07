@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-10-07T11:06:36.691723+00:00",
+  "target": "http://localhost:8000/",
+  "model_run_id": "author-pretrained-yolov8m-produce",
+  "trained_locally": false,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "apple demo uses real inference",
+      "passed": true,
+      "detections": 2
+    },
+    {
+      "name": "local banana file upload and detection",
+      "passed": true,
+      "detections": 1,
+      "label": "banana",
+      "confidence": 0.957
+    },
+    {
+      "name": "blank negative demo",
+      "passed": true,
+      "detections": 0
+    },
+    {
+      "name": "evaluation tab displays frozen test results",
+      "passed": true,
+      "samples": 103,
+      "TP": 729,
+      "FP": 613,
+      "FN": 1298
+    },
+    {
+      "name": "history tab displays user predictions",
+      "passed": true
+    },
+    {
+      "name": "UTF-8 report endpoint contains actual results",
+      "passed": true
+    },
+    {
+      "name": "30 megapixel PNG rejected",
+      "passed": true,
+      "http_status": 413
+    }
+  ],
+  "automated_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "screenshots": [
+    "artifacts/web_apple.jpg",
+    "artifacts/web_banana.jpg",
+    "artifacts/web_evaluation.jpg"
+  ],
+  "note": "Illustrative successful demo images do not establish overall accuracy; see the frozen evaluation."
+}

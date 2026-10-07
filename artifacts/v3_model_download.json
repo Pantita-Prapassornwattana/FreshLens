@@ -1,0 +1,305 @@
+{
+  "source": "https://drive.google.com/drive/folders/1I4mtQK11C3p41pO9raR0trgPVj0eQ2yb",
+  "file_id": "1aaRDJWTYZKBEnt9wq719C9AKi8JskWDP",
+  "bytes": 136818985,
+  "sha256": "75b53f0807692f6a6f77545f805158507751a977dec3bb5349b1625f280fa0f4",
+  "yaml": {
+    "nc": 63,
+    "depth_multiple": 1.0,
+    "width_multiple": 1.25,
+    "backbone": [
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          64,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          128,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C2f",
+        [
+          128,
+          true
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          256,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        6,
+        "C2f",
+        [
+          256,
+          true
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          512,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        6,
+        "C2f",
+        [
+          512,
+          true
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          512,
+          3,
+          2
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C2f",
+        [
+          512,
+          true
+        ]
+      ],
+      [
+        -1,
+        1,
+        "SPPF",
+        [
+          512,
+          5
+        ]
+      ]
+    ],
+    "head": [
+      [
+        -1,
+        1,
+        "nn.Upsample",
+        [
+          "None",
+          2,
+          "nearest"
+        ]
+      ],
+      [
+        [
+          -1,
+          6
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C2f",
+        [
+          512
+        ]
+      ],
+      [
+        -1,
+        1,
+        "nn.Upsample",
+        [
+          "None",
+          2,
+          "nearest"
+        ]
+      ],
+      [
+        [
+          -1,
+          4
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C2f",
+        [
+          256
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          256,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          -1,
+          12
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C2f",
+        [
+          512
+        ]
+      ],
+      [
+        -1,
+        1,
+        "Conv",
+        [
+          512,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          -1,
+          9
+        ],
+        1,
+        "Concat",
+        [
+          1
+        ]
+      ],
+      [
+        -1,
+        3,
+        "C2f",
+        [
+          512
+        ]
+      ],
+      [
+        [
+          15,
+          18,
+          21
+        ],
+        1,
+        "Detect",
+        [
+          "nc"
+        ]
+      ]
+    ],
+    "ch": 3
+  },
+  "classes": {
+    "0": "almond",
+    "1": "apple",
+    "2": "apricot",
+    "3": "artichoke",
+    "4": "asparagus",
+    "5": "avocado",
+    "6": "banana",
+    "7": "bean curd/tofu",
+    "8": "bell pepper/capsicum",
+    "9": "blackberry",
+    "10": "blueberry",
+    "11": "broccoli",
+    "12": "brussels sprouts",
+    "13": "cantaloup/cantaloupe",
+    "14": "carrot",
+    "15": "cauliflower",
+    "16": "cayenne/cayenne spice/cayenne pepper/cayenne pepper spice/red pepper/red pepper",
+    "17": "celery",
+    "18": "cherry",
+    "19": "chickpea/garbanzo",
+    "20": "chili/chili vegetable/chili pepper/chili pepper vegetable/chilli/chilli vegetable/chilly/chilly",
+    "21": "clementine",
+    "22": "coconut/cocoanut",
+    "23": "edible corn/corn/maize",
+    "24": "cucumber/cuke",
+    "25": "date/date fruit",
+    "26": "eggplant/aubergine",
+    "27": "fig/fig fruit",
+    "28": "garlic/ail",
+    "29": "ginger/gingerroot",
+    "30": "Strawberry",
+    "31": "gourd",
+    "32": "grape",
+    "33": "green bean",
+    "34": "green onion/spring onion/scallion",
+    "35": "Tomato",
+    "36": "kiwi fruit",
+    "37": "lemon",
+    "38": "lettuce",
+    "39": "lime",
+    "40": "mandarin orange",
+    "41": "melon",
+    "42": "mushroom",
+    "43": "onion",
+    "44": "orange/orange fruit",
+    "45": "papaya",
+    "46": "pea/pea food",
+    "47": "peach",
+    "48": "pear",
+    "49": "persimmon",
+    "50": "pickle",
+    "51": "pineapple",
+    "52": "potato",
+    "53": "prune",
+    "54": "pumpkin",
+    "55": "radish/daikon",
+    "56": "raspberry",
+    "57": "strawberry",
+    "58": "sweet potato",
+    "59": "tomato",
+    "60": "turnip",
+    "61": "watermelon",
+    "62": "zucchini/courgette"
+  },
+  "trained_locally": false
+}

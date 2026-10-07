@@ -1,0 +1,74 @@
+{
+  "selection_uses": "valid_only",
+  "candidates": [
+    {
+      "run_id": "worldv2-pretrained-47",
+      "model": "YOLO-World v2 small + CLIP vocabulary",
+      "config": "world_config.json",
+      "images": 108,
+      "metrics": {
+        "tp": 51,
+        "fp": 190,
+        "fn": 1848,
+        "precision": 0.21161825726141079,
+        "recall": 0.026856240126382307,
+        "f1": 0.04766355140186916
+      },
+      "classes_with_true_positives": 10,
+      "weights_sha256": "3d651e5ce722072f1cde0a2a4e170ad715abf2699b7440d593e6fec856f43bb1",
+      "report": "world_small_validation.json"
+    },
+    {
+      "run_id": "worldv2-medium-pretrained-47",
+      "model": "YOLO-World v2 medium + CLIP vocabulary",
+      "config": "world_medium_config.json",
+      "images": 108,
+      "metrics": {
+        "tp": 76,
+        "fp": 112,
+        "fn": 1823,
+        "precision": 0.40425531914893614,
+        "recall": 0.040021063717746184,
+        "f1": 0.07283181600383325
+      },
+      "classes_with_true_positives": 16,
+      "weights_sha256": "c13f52326c02f6d651a0ded3bf4cee3948af8d04e31b767916df97e9f2deaa7a",
+      "report": "world_medium_validation.json"
+    },
+    {
+      "run_id": "yoloe11s-pretrained-47",
+      "model": "YOLOE 11 small + MobileCLIP vocabulary",
+      "config": "yoloe_config.json",
+      "images": 108,
+      "metrics": {
+        "tp": 67,
+        "fp": 127,
+        "fn": 1832,
+        "precision": 0.34536082474226804,
+        "recall": 0.03528172722485519,
+        "f1": 0.06402293358815098
+      },
+      "classes_with_true_positives": 15,
+      "weights_sha256": "61de15b65ce006238ec2381aa177636270f439c1063d90a86edc94614b629bc5",
+      "report": "yoloe_small_validation.json"
+    },
+    {
+      "run_id": "author-pretrained-yolov8m-produce",
+      "model": "YOLOv8m Fruits & Vegetables (author pretrained)",
+      "config": "domain_config.json",
+      "images": 108,
+      "metrics": {
+        "tp": 619,
+        "fp": 627,
+        "fn": 1280,
+        "precision": 0.4967897271268058,
+        "recall": 0.32596103212216954,
+        "f1": 0.3936406995230525
+      },
+      "classes_with_true_positives": 35,
+      "weights_sha256": "a18624d446e2fea08384949115de0b49446f0be2487fc954a37a9d962f71e5d3",
+      "report": "domain_validation.json"
+    }
+  ],
+  "selected": "author-pretrained-yolov8m-produce"
+}
