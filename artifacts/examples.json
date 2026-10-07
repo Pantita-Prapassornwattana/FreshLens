@@ -52,14 +52,6 @@
     "selection": "Synthetic control"
   },
   {
-    "id": "upgrade-cabbage",
-    "path": "data/raw/valid/images/-23_jpg.rf.ef9212d1b0c23a393096e5184a459663.jpg",
-    "classes": [
-      "cabbage"
-    ],
-    "label": "Dataset validation example: cabbage"
-  },
-  {
     "id": "upgrade-hot-pepper",
     "path": "data/raw/valid/images/000000220216_jpg.rf.31a09f5a54f7fe7f7ff220f854e7eb73.jpg",
     "classes": [
