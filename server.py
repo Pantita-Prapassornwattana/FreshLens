@@ -59,6 +59,21 @@ class Handler(BaseHTTPRequestHandler):
         route = self.path.split('?')[0]
         if route == '/api/status':
             return self.reply(200, status())
+        if route in ('/api/training', '/api/training-csv'):
+            from training_status import training_state, training_csv
+            training = training_state(ROOT)
+            if route == '/api/training-csv':
+                if not training['csv_available']:
+                    return self.reply(404, {'error': 'ยังไม่มีผลการเทรนราย epoch'})
+                return self.reply(200, training_csv(training), 'text/csv; charset=utf-8')
+            return self.reply(200, training)
+        if route == '/api/training-report':
+            path = ROOT / 'docs/training_report.md'
+            if not path.is_file():
+                return self.reply(404, {'error': 'ยังไม่มีรายงานการเทรน'})
+            return self.reply(200, path.read_bytes(), 'text/markdown; charset=utf-8')
+        if route == '/training.js':
+            return self.reply(200, (ROOT / 'web/training.js').read_bytes(), 'text/javascript; charset=utf-8')
         if route == '/api/examples':
             examples=read_json(ART/'examples.json',[])
             return self.reply(200,[{k:v for k,v in row.items() if k!='path'} for row in examples])

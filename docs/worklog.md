@@ -49,6 +49,10 @@
 - รายงานใหม่ docs/report.md, รายงานก่อนหน้า report_before_expansion.md, pairedmetrics expansion_comparison.json, rawfinal supplement_final_test.json, รูปกราฟ upgrade_comparison.png, frozen_production_upgrade.json
 # ตรวจภาพสาธิตและเชื่อม GitHub (8 ตุลาคม 2026)
 
+- แก้แท็บการเทรนที่ค้าง: เพิ่ม API สถานะ/CSV/รายงาน และ JavaScript โหลดสถานะพร้อม timeout และข้อความเมื่อโหลดไม่สำเร็จ
+- อ่านผลจาก CSV ของ run ที่บันทึกจริงเท่านั้น; เมื่อไม่มีการฝึก แสดง 0 epoch และไม่มีข้อมูลกราฟ พร้อมกราฟเปรียบเทียบ pretrained เดิม/ระบบรวมที่วัดจริงบน 111 ภาพ
+- ทดสอบ parser 3 ข้อ (ไม่มี run, metrics ขาด/NaN, ห้ามอ่านนอกโฟลเดอร์ runs) ผ่าน; ทดสอบ localhost endpoints และหน้าเว็บจริงแล้วไม่ค้างและไม่มี console error
+
 - ตรวจภาพ `upgrade-beet` กับ annotation: มี beet, radish และ garlic จึงแก้ชื่อปุ่มที่เดิมระบุเพียง beet
 - ตรวจผ่าน `/api/predict` พบผลผิด potato, onion, pear และ apple พร้อม beet หนึ่งกรอบ; ภาพบีทรูตเดี่ยวที่ตรวจเพิ่ม 6 ภาพยังมีผลผิด จึงไม่อ้างว่าแก้ความแม่นยำแล้ว
 - แสดงปุ่มเป็นตัวอย่างข้อจำกัดที่ยังตรวจผิด ไม่ใช้ label ของปุ่มแทนผลจริงจากโมเดล
